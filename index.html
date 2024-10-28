@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>資料收集表單</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定義樣式（可選） -->
+    <style>
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>資料收集表單</h1>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbxwvlQ3h6b2lDjVXJQiYIoOsgL5ceud-mSSyYv7ksU8WM8m7ZNd3qDq8jjY97of_uFY5Q/exec">
+            <!-- 姓名 -->
+            <div class="mb-3">
+                <label for="name" class="form-label">姓名：</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <!-- 電話 -->
+            <div class="mb-3">
+                <label for="phone" class="form-label">電話：</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <!-- 工作職稱 -->
+            <div class="mb-3">
+                <label for="jobTitle" class="form-label">工作職稱：</label>
+                <input type="text" class="form-control" id="jobTitle" name="jobTitle" required>
+            </div>
+
+            <!-- 學歷 -->
+            <div class="mb-3">
+                <label for="education" class="form-label">學歷：</label>
+                <select class="form-select" id="education" name="education" required>
+                    <option value="">請選擇</option>
+                    <option value="小學">小學</option>
+                    <option value="中學">中學</option>
+                    <option value="大學">大學</option>
+                    <option value="研究所">研究所</option>
+                </select>
+            </div>
+
+            <!-- 性別 -->
+            <div class="mb-3">
+                <label class="form-label">性別：</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="male" name="gender" value="男" required>
+                        <label class="form-check-label" for="male">男</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="female" name="gender" value="女">
+                        <label class="form-check-label" for="female">女</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 提交按鈕 -->
+            <button type="submit" class="btn btn-primary w-100">提交</button>
+        </form>
+    </div>
+
+    <!-- 引入 Bootstrap JS（可選） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
